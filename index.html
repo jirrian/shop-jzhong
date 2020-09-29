@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+ 
+    <title>jzhong</title>
+    <meta charset="UTF-8">
+    <!--[if IE ]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]--> 
+    <meta name="description" content="Unique acrylic accessories designed by Jillian Zhong. Handmade in NYC.">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1, width=device-width" />  
+    <link href="theme.css" media="screen" rel="stylesheet" type="text/css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
+    </script>  
+    
+    <link href="https://raw.githubusercontent.com/jirrian/jzhong-website/master/jzhongwebsite/public/favicon.ico?token=ALbi65bNpY4atbbFlA9PGz9oIGWAdBXEks5bagTHwA%3D%3D" rel="icon" type="image/x-icon">
+  </head>
+  <body id="home" class="theme">	
+  	
+    <header id="site_header">
+      
+      <div id="top-message-container">
+        <div id="top-message">
+          shop is currently on hiatus. new collection coming soon.
+        </div>
+      </div>
+     
+      
+      <div id="branding">
+        <h1><a href="/" title="Home">jzhong</a></h1>
+      </div>
+     
+      
+    </header>
+    
+    <div id="site_content" class="canvas">
+      <div id="theme_image">
+        <a href="/" title="Home">
+        <img src="{{ theme.image.url | constrain: 1000 }}" alt="jzhong" />
+        </a>
+      </div>
+  
+      <nav id="nav_primary">    
+        <span class="keyline"></span>
+      </nav>    
+  
+     
+    <section id="gallery">
+      <div class="product_images galy">
+        <div class="spinner"></div>
+        <ul class="slides">
+          {% for image in theme.image_sets.slideshow %}
+          <li><img src="{{ image.url }}" /></li>
+          {% endfor %}      
+        </ul>
+      </div>    
+    </div> 
+    
+    <footer id="site_footer">
+    	<div class="canvas">
+    		<nav>
+          <ul>
+            <li><a href="/about.html" title="About">About</a></li>
+            <li><a href="mailto:jillianzhong@gmail.com" title="Contact">Contact</a></li>
+            <li><a href="/mailing-list.html" title="Mailing List">Mailing List</a></li>
+            <li><a title="Instagram" href="https://www.instagram.com/shop.jzhong/">Instagram</a></li>
+          </ul>  
+    		</nav>
+
+    	</div>
+    </footer>   
+  </body>
+</html>
